@@ -41,6 +41,6 @@ class TestSongSerializer(TestCase):
         }
         serializer = SongSerializer(data=data)
         self.assertFalse(serializer.is_valid())
-        self.assertEquals(str(serializer.errors['source'][0]),' mp3 file required')
+        self.assertEqual(str(serializer.errors['source'][0]),' mp3 file required')
 
 
