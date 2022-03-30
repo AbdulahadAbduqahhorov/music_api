@@ -87,10 +87,9 @@ DATABASES = {
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
         'HOST': os.environ.get('POSTGRES_HOST'),
         'PORT': '5432',
-        'TEST':{
-            'NAME' : 'postgres'
+
         }
-    }
+
 }
 
 
