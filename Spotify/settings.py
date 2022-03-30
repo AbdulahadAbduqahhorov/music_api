@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
     'music',
+    'pytest',
+    'pytest_django'
 ]
 
 MIDDLEWARE = [
@@ -85,6 +87,9 @@ DATABASES = {
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
         'HOST': os.environ.get('POSTGRES_HOST'),
         'PORT': '5432',
+        'TEST':{
+            'NAME' : 'postgres'
+        }
     }
 }
 
